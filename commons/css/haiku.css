@@ -1,0 +1,239 @@
+html {
+  height: 100%;
+}
+body {
+  font-family: Courier New,monospace,Arial,sans-serif;
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
+  min-height: 100%;
+  color: #000;
+  position: static;
+}
+a {
+  text-decoration: none;
+}
+
+
+textarea {
+  font-family: Courier New,monospace, Arial, sans-serif;
+  height: 4em;
+  min-height: 4.5em;
+  overflow: visible;
+}
+
+/* Form */
+.user-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+
+@media screen and (min-width: 481px) {
+
+textarea {
+  width: 640px;
+  font-size: 15px;
+  
+  padding: 10px;
+}
+input {
+  color: #999999;
+  font-family: Courier New,monospace, Arial, sans-serif;
+  width: 100%;
+  margin: 0;
+}
+    
+hr {
+  border-width: 0 0 1px;
+  border-color: #DDD;
+  width: 80%;
+}
+
+.content {
+  margin: auto;
+  padding: 8px 20px 190px 20px;
+  width: 660px;
+  position: relative;
+}
+.section {
+  margin-bottom: 40px;
+  position: relative;
+}
+.section-title {
+  border-bottom: 1px solid #DDD;
+  color: #333;
+  display: block;
+  padding-bottom: 4px;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+.page-title {
+  margin: 0 auto 40px;
+  padding: 20px 20px 0px;
+  position: relative;
+  width: 660px;
+}
+a.contact, a.account, a.search {
+  color: #999999;
+  font-size: 12px;
+  font-weight: normal;
+}
+a.account, a.search {
+  position: absolute;
+  top: 5px;
+  right: 0;
+}
+a.contact:hover, a.account:hover, a.search:hover {
+  color: #333333;
+}
+a.account {
+  top: 25px;
+  right: 20px;
+}
+
+/* Analyze */
+.row {
+  font-size: 18px;
+  height: 1.5em;
+  position: relative;
+}
+.hidden {
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+}
+.annotation-toggle {
+  color: #999;
+  font-size: 12px;
+  margin-bottom: 8px;
+  text-align: right;
+}
+#annotation-toggle-link {
+  color: #000;
+  display: inline-block;
+  width: 2em;
+}
+#annotation-toggle-link .off {
+  display: none;
+}
+.annotated #annotation-toggle-link .on {
+  display: none;
+}
+.annotated #annotation-toggle-link .off {
+  display: inline;
+}
+.exposed-line {
+  color: transparent;
+  cursor: default;
+  position: absolute;
+  top: 1px;
+  left: 2px;
+}
+.exposed-line > span {
+  color: #333;
+}
+.annotated .exposed-line > span {
+  /*background: #E6A9EC;*/
+  color: #000;
+  padding: 0 0.25em;
+  margin-right: 1px;
+}
+
+.count {
+  color: #000;
+  cursor: default;
+  height: 1.5em;
+  text-align: right;
+}
+    
+.error {
+  color: #AA0000;
+}
+    
+
+/* Share */
+.share-container {
+  min-height: 130px;
+}
+#share-options {
+  
+}
+#share-options .option {
+  height: 32px;
+}
+#share-options .option .name {
+  float: left;
+  height: 32px;
+  text-transform: lowercase;
+}
+#share-options .option .value {
+  color: #000;
+  font-size: 12px;
+  height: 32px;
+  margin-left: 100px;
+}
+#share-options .option #twitter-link {
+  background: url(http://twitter-badges.s3.amazonaws.com/t_small-a.png) top left no-repeat;
+  color: #000;
+  font-size: 12px;
+  padding: 4px 4px 4px 30px;
+}
+#share-options .option #twitter-link:hover {
+  color: #000;
+  text-decoration: underline;
+}
+#share-msg {
+  color: #000;
+  display: block;
+  margin: 30px auto;
+  text-align: center;
+  text-transform: lowercase;
+  width: 150px;
+}
+
+/* Tweet feed */
+#tweet-feed {
+}
+#tweet-feed .tweet {
+  border-bottom: 1px solid #DDD;
+  padding: 12px 0;
+}
+#tweet-feed .tweet .user-image {
+  float: left;
+}
+#tweet-feed .tweet .details {
+  margin-left: 60px;
+  font-size: 11px;
+}
+#tweet-feed .tweet .details .user-name {
+  color: #000;
+  font-size: 11px;
+}
+#tweet-feed .tweet .details .text {
+  color: #000;
+  font-size: 12px;
+  margin-bottom: 4px;
+}
+#tweet-feed .tweet .details .text a {
+  color: #000;
+}
+#tweet-feed .tweet .details .text a:hover {
+  color: #000;
+  text-decoration: underline;
+}
+#tweet-feed .tweet .details .time {
+  color: #000;
+  font-size: 10px;
+}
+.ad {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    xbackground-color: gray;
+    text-align: center;
+}
+}
+

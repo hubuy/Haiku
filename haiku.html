@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="bitly-verification" content="86cae75431e7"/>
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+    <title>check your haiku</title>
+    <link href="/commons/images/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link rel="stylesheet" href="/commons/css/haiku.css">
+
+    <script src="/commons/js/jquery-1.4.2.min.js"></script>
+    <script src="/commons/js/hyphenator.js"></script>
+    <script src="/commons/js/exceptions.js"></script>
+    <script src="/commons/js/haiku.js"></script>
+    
+  </head>
+  <body onload="h.onLoad();">
+    <h1 class="page-title title">
+      check your haiku
+    </h1>
+    <div class="content">
+      <div class="section form">
+        <textarea id="user-text" placeholder="rules: 5 syllables for the first line, 7 for the second, and 5 for the third."></textarea>
+        <div id="hyphenate-user-text" class="hidden"></div>
+      </div>
+
+      <div id="rows" class="section annotated hidden" onclick="$('#user-text').focus()">
+        <div class="annotation-toggle hidden">
+          Turn annotation <a id="annotation-toggle-link" href="javascript:void 0"><span class="off">OFF</span><span class="on">ON</span></a>
+        </div>
+        <div class="row">
+          <div id="exposed-line-0" class="exposed-line"></div>
+          <div id="syllable-count-0" class="count"></div>
+        </div>
+        <div class="row">
+          <div id="exposed-line-1" class="exposed-line"></div>
+          <div id="syllable-count-1" class="count"></div>
+        </div>
+        <div class="row">
+          <div id="exposed-line-2" class="exposed-line"></div>
+          <div id="syllable-count-2" class="count"></div>
+        </div>
+      </div>
+      
+      <div id="share-container" class="section share-container hidden">
+        <div id="share-options" class="hidden">
+            <div class="option">
+                <div class="name">tweet</div>
+                <div class="value">
+                    <a id="twitter-link" href="javascript:void 0" target="twitter"></a>
+                </div>
+            </div>
+<!--
+            <div class="option">
+                <div class="name">Copy</div>
+                <div class="value">
+                    <input type="text" id="copy-and-paste">
+                </div>
+            </div>
+            <div class="option">
+                <div class="name">Link</div>
+                <div class="value">
+                    <input type="text" id="short-link">
+                </div>
+</div>
+-->
+        </div>
+        <a id="share-msg" href="javascript:void 0" onclick="h.getShortLink();">it's a haiku!</a>
+      </div>
+        
+      
+    
+  </body>
+</html>
